@@ -10,14 +10,20 @@
 <p> {{counter}}</p> -->
 
 
-<div *ngTemplateOutlet="test">
+<div *ngTemplateOutlet="test; context:{A: counter}">
 
 </div>
 
 
 <!-- ng-template 一般使用 -->
-<ng-template #test>
+<!-- <ng-template #test>
   <app-child-two-way #two_way></app-child-two-way>
   <p> two_way.counter: {{two_way.counter}}</p>
   <button (click)="two_way.addition()"> + 1</button>
+</ng-template> -->
+
+<!-- ng-template 參數帶入 -->
+<ng-template #test let-testData = "A">
+  <p> {{testData}}</p>
 </ng-template>
+
