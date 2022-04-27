@@ -4,8 +4,15 @@
 </app-child>
 <p *ngIf="homeA"> {{homeA}}</p> -->
 
-<app-child [(A)]="counter" color="red">
+<!-- 雙向 -->
+<!-- <app-child [(A)]="counter" color="red">
 </app-child>
-<p> {{counter}}</p>
+<p> {{counter}}</p> -->
 
-<button (click)="addition()"> + 1</button>
+
+<app-child-two-way #two_way>
+
+</app-child-two-way>
+<p> two_way.counter: {{two_way.counter}}</p>
+<button (click)="two_way.addition()"> + 1</button>
+

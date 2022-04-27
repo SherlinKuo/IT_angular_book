@@ -24,4 +24,6 @@ export class HomeComponent implements OnInit {
     console.log(`home - A : ${value}`);
     this.homeA = value;
   }
+
+
 }
