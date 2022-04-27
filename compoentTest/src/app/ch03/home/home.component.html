@@ -10,9 +10,14 @@
 <p> {{counter}}</p> -->
 
 
-<app-child-two-way #two_way>
+<div *ngTemplateOutlet="test">
 
-</app-child-two-way>
-<p> two_way.counter: {{two_way.counter}}</p>
-<button (click)="two_way.addition()"> + 1</button>
+</div>
 
+
+<!-- ng-template 一般使用 -->
+<ng-template #test>
+  <app-child-two-way #two_way></app-child-two-way>
+  <p> two_way.counter: {{two_way.counter}}</p>
+  <button (click)="two_way.addition()"> + 1</button>
+</ng-template>
