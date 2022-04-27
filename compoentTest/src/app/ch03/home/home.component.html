@@ -1,0 +1,11 @@
+
+<!-- 單向 -->
+<!-- <app-child [A]="counter" color="red" (AChange)="showA($event)">
+</app-child>
+<p *ngIf="homeA"> {{homeA}}</p> -->
+
+<app-child [(A)]="counter" color="red">
+</app-child>
+<p> {{counter}}</p>
+
+<button (click)="addition()"> + 1</button>
