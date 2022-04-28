@@ -10,6 +10,7 @@ import { ChildContentComponent } from './ch03/child-content/child-content.compon
 import { HookhomeComponent } from './ch03/hook/hookhome/hookhome.component';
 import { FormsModule } from '@angular/forms';
 import { C1Component } from './ch03/hook/c1/c1.component';
+import { ChildC2Component } from './ch03/hook/child-c2/child-c2.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { C1Component } from './ch03/hook/c1/c1.component';
     ChildTwoWayComponent,
     ChildContentComponent,
     HookhomeComponent,
-    C1Component
+    C1Component,
+    ChildC2Component
   ],
   imports: [
     BrowserModule,
