@@ -11,6 +11,7 @@ import { HookhomeComponent } from './ch03/hook/hookhome/hookhome.component';
 import { FormsModule } from '@angular/forms';
 import { C1Component } from './ch03/hook/c1/c1.component';
 import { ChildC2Component } from './ch03/hook/child-c2/child-c2.component';
+import { ChildViewChildComponent } from './ch03/hook/child-view-child/child-view-child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChildC2Component } from './ch03/hook/child-c2/child-c2.component';
     ChildContentComponent,
     HookhomeComponent,
     C1Component,
-    ChildC2Component
+    ChildC2Component,
+    ChildViewChildComponent
   ],
   imports: [
     BrowserModule,
