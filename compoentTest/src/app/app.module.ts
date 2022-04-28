@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { C1Component } from './ch03/hook/c1/c1.component';
 import { ChildC2Component } from './ch03/hook/child-c2/child-c2.component';
 import { ChildViewChildComponent } from './ch03/hook/child-view-child/child-view-child.component';
+import { TestViewComponent } from './ch03/test-view/test-view.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ChildViewChildComponent } from './ch03/hook/child-view-child/child-view
     HookhomeComponent,
     C1Component,
     ChildC2Component,
-    ChildViewChildComponent
+    ChildViewChildComponent,
+    TestViewComponent
   ],
   imports: [
     BrowserModule,
