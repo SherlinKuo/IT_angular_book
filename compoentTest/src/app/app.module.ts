@@ -7,6 +7,9 @@ import { HomeComponent } from './ch03/home/home.component';
 import { ChildComponent } from './ch03/child/child.component';
 import { ChildTwoWayComponent } from './ch03/child-two-way/child-two-way.component';
 import { ChildContentComponent } from './ch03/child-content/child-content.component';
+import { HookhomeComponent } from './ch03/hook/hookhome/hookhome.component';
+import { FormsModule } from '@angular/forms';
+import { C1Component } from './ch03/hook/c1/c1.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { ChildContentComponent } from './ch03/child-content/child-content.compon
     HomeComponent,
     ChildComponent,
     ChildTwoWayComponent,
-    ChildContentComponent
+    ChildContentComponent,
+    HookhomeComponent,
+    C1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
